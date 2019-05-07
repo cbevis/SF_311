@@ -13,3 +13,6 @@ Next, neural networks were used to classify the samples by image. The first atte
 
 My next step was to see what would happen when I combined models. Combining just the VGG16 model and the MLP model resulted in a lower accuracy in the 30s, even after trying many variations of including fully connected layers and dropout after the data in concatenated. However, when all three models are combined (CNN, VGG16, MLP), my top accuracy improves from 50% to 52%.
 
+-----------------------------------------------
+The image data was downloaded in batches of 1000, 10% removed from each side, reduced to 128x128, and converted to grayscale.  The pickle files can be found at: https://drive.google.com/drive/folders/1S8xeaFcB7f0hN3yKxGB8X3Wrn17CUa-z?usp=sharing
+
